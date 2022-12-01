@@ -16,11 +16,28 @@ body {background-color: rgb(119,212,150);}
 </a></i></h3>
 
 
-
-<div style="overflow: hidden; height: 10000px; width: 10000px;" >
-    <iframe src="https://ellisonleao.github.io/clumsy-bird/" id="q" allowfullscreen frameborder="1000000"></iframe>
+<p align="middle"></p><div style="overflow: hidden; height: 10000px; width: 10000px;">
+    <iframe id="Game" src="https://ellisonleao.github.io/clumsy-bird/" id="q" allowfullscreen frameborder="1000000"></iframe>
     <br/><br/>
     </div>
+    
+    <script>
+        let toggle = () => {
+      
+          let element = document.getElementById("Game");
+          let hidden = element.getAttribute("hidden");
+      
+          if (hidden) {
+             element.removeAttribute("hidden");
+          } else {
+             element.setAttribute("hidden", "hidden");
+          }
+        }
+      </script>
+
+
+
+
     <p align="left"><a href="index.html"><img src="h_button.png" width="50"></a></p>
 </body>
 </html>
